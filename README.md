@@ -1,4 +1,4 @@
-# Docker - Laravel
+# Docker Laravel 8
 
 A pretty simplified Docker Compose workflow that sets up a LEMP (Linux, NGINX, MySQL, PHP) network of containers for local Laravel development.
 
@@ -34,7 +34,7 @@ To get started, make sure you have [Docker installed](https://docs.docker.com/) 
 4. Build the project whit the next commands:
 
    ```sh
-   docker-docker up --build
+   docker compose up --build
    ```
 
 ---
@@ -78,23 +78,23 @@ DB_HOST=mysql
 To Down and remove the volumes we use the next command:
 
 ```sh
-docker-docker down -v
+docker compose down -v
 ```
 
 Update Composer:
 
 ```sh
-docker-docker run --rm composer update
+docker compose run --rm composer update
 ```
 
 Run compiler (Webpack.mix.js) or Show the view compiler in node:
 
 ```sh
-docker-docker run --rm npm run dev
+docker compose run --rm npm run dev
 ```
 
 Run all migrations:
 
 ```sh
-docker-docker run --rm artisan migrate
+docker compose run --rm artisan migrate
 ```
