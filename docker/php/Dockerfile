@@ -3,6 +3,9 @@ FROM php:8.0-fpm-alpine
 # Copy File Config
 ADD ./docker/php/www.conf /usr/local/etc/php-fpm.d/www.conf
 
+# Copy Custom ini file
+COPY ./docker/php/config/custom.ini /usr/local/etc/php/conf.d/custom.ini
+
 # ADD and set Group
 RUN addgroup -g 1000 laravel && adduser -G laravel -g laravel -s /bin/sh -D laravel
 
