@@ -24,17 +24,22 @@ Para usar esse workflow, você precisa ter o [Docker instalado](https://docs.doc
 
 2. Você pode copiar os dados clonados para a raiz do seu projeto Laravel. Só tome cuidado com o `.gitignore` e para não copiar o `diretório do git` deste repositório. 
 
-3. Build o projeto com o comando:
+3. Build o worflow com o comando:
 
    ```sh
    docker compose build 
    ```
 
-4. Rode o projeto com o comando:
+4. Rode o worflow com o comando:
 
    ```sh
    docker compose up
    ```
+
+---
+
+## PHP
+Você pode alterar a configuração do PHP. O Arquivo customizado está no diretório `./docker/php/config/custom.ini`
 
 ---
 
@@ -47,9 +52,9 @@ Atualize a configuração do banco de dados no `docker-compose.yml` e no seu arq
 DB_CONNECTION=mysql
 DB_HOST=mysql # Nome do container
 DB_PORT=3306 # Porta do MYSQL
-DB_DATABASE=db_name # Nome da Database
+DB_DATABASE=db_name # Nome da database
 DB_USERNAME=db_user # Nome do usuário do banco de dados
-DB_PASSWORD=db_password #senha do banco de dados
+DB_PASSWORD=db_password # Senha do banco de dados
 ```
 
 ```yaml
