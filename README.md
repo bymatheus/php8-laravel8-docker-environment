@@ -2,7 +2,7 @@
 
 Um simples workflow do Docker Compose que seta um LEMP (Linux, NGINX, MySQL, PHP) para um ambiente local de desenvolvimento com Laravel 8.
 
-## Ports
+## Portas
 
 Ports used in the project:
 | Software | Port |
@@ -12,7 +12,7 @@ Ports used in the project:
 | **mysql** | 3306 |
 | **php** | 9000 |
 
-## Use
+## Uso
 
 Para usar esse workflow, você precisa ter o [Docker instalado](https://docs.docker.com/) e o [Docker Compose](https://docs.docker.com/compose/install/). Depois disso, você pode clonar este repositório.
 
