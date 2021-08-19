@@ -73,4 +73,3 @@ fabric.properties
 
 # Laravel
 /vendor
-/mysql
