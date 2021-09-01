@@ -73,3 +73,7 @@ fabric.properties
 
 # Laravel
 /vendor
+
+# MySQL
+mysql/*
+!mysql/.gitkeep
